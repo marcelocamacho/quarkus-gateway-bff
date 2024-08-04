@@ -18,7 +18,6 @@ import jakarta.ws.rs.core.Response;
 @RegisterRestClient
 @RegisterProvider(AccessTokenRequestReactiveFilter.class)
 @ApplicationScoped
-@RegisterClientHeaders
 public interface ProposalRestClient {
     @GET
     @Path("/{id}")
