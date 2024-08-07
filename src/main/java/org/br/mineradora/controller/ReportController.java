@@ -14,7 +14,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 
-@Path("/api/opportunity/")
+@Path("/api/opportunity")
 public class ReportController {
     
     @Inject
