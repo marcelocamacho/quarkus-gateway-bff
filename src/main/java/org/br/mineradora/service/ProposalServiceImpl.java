@@ -2,6 +2,7 @@ package org.br.mineradora.service;
 
 import org.br.mineradora.client.ProposalRestClient;
 import org.br.mineradora.dto.ProposalDetailsDTO;
+import org.eclipse.microprofile.opentracing.Traced;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import jakarta.enterprise.context.ApplicationScoped;
@@ -10,6 +11,7 @@ import jakarta.ws.rs.core.Response;
 
 
 @ApplicationScoped
+@Traced
 public class ProposalServiceImpl  implements ProposalService{
 
     @Inject

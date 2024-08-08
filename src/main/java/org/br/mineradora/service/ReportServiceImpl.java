@@ -6,6 +6,7 @@ import java.util.List;
 import org.br.mineradora.client.ReportRestClient;
 import org.br.mineradora.dto.OpportunityDTO;
 import org.br.mineradora.utils.CSVHelper;
+import org.eclipse.microprofile.opentracing.Traced;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import jakarta.enterprise.context.ApplicationScoped;
@@ -13,6 +14,7 @@ import jakarta.inject.Inject;
 
 
 @ApplicationScoped
+@Traced
 public class ReportServiceImpl implements ReportService{
 
     @Inject
